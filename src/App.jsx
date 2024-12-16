@@ -2,7 +2,12 @@
 import React from 'react';
 
 const App = () => {
-  return <h1>Hello, React without CRA!</h1>;
+  return <>
+    <div className="text-center text-xl text-[#f00]">
+      Hello, Tailwind with React!
+    </div>
+    {/* <video src='../style/vedio/bg-rose.mp4'></video> */}
+  </>;
 };
 
 export default App;
