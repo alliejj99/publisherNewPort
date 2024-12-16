@@ -1,13 +1,17 @@
 // React 컴포넌트
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import bgVideo from './videos/bg-rose.mp4';
 
 const App = () => {
-  return <>
-    <div className="text-center text-xl text-[#f00]">
-      Hello, Tailwind with React!
-    </div>
-    {/* <video src='../style/vedio/bg-rose.mp4'></video> */}
-  </>;
+  {/* <video src="./videos/bg-rose.mp4" ></video> */ }
+
+
+  return (
+    <video autoPlay loop muted>
+      <source src={bgVideo} type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  );
 };
 
 export default App;

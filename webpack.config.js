@@ -41,6 +41,10 @@ module.exports = {
           },
         ],
       },
+      {
+        test: /\.(mp4|webm|ogg)$/,
+        use: 'file-loader',
+      },
     ],
   },
   resolve: {
